@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textColor="#BCB7B7"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/login"
+        android:textStyle="bold">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameLogin"
+        android:hint="Username"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordLogin"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/usernameLogin"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLogin"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#104F81"
+        android:id="@+id/btnSignIn"
+        android:textSize="25dp"
+        android:text="Login" />
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#A9BAC8"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appname"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:textColorHint="#C4CECD"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#D0D5D5"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword"
+        android:textColorHint="#D0D7D6"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#3E9DE7"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignUp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#318FD9"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textSize="25dp" />
+</RelativeLayout>
